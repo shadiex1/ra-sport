@@ -3,7 +3,8 @@ import styles from "./homepage.module.scss";
 import Menu from "../../components/menu/menu";
 import Showcase from "../../components/showcase/showcase"
 import Categories from "../../components/categories/categories";
-import Brands from "../../components/brands/brands"
+import Brands from "../../components/brands/brands";
+import Card from "../../components/card/card"
 
 
 class Homepage extends Component{
@@ -14,6 +15,7 @@ class Homepage extends Component{
                     <Showcase/>
                     <Categories/>
                     <Brands/>
+                    <Card/>
             </div>
         )
     }
