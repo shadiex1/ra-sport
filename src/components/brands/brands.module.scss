@@ -1,0 +1,96 @@
+.brandsContainer{
+    background-image: url("../../assets/brands/Image8.png");
+    .brands{
+        width: 70%;
+        margin: auto;
+        padding: 5rem;
+        p{
+            color: var(--white-color);
+            font-size: 2rem;
+            margin-left: .5rem;
+            span{
+                font-weight: bold;
+            }
+        }
+    }
+    
+    .board{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin: 3rem auto;
+        .showcaseImg{
+            width: 74%;
+            height: 25rem;
+        }
+        .descrption{
+            background-color: #314a50 ;
+            height: 25rem;
+            width: 26%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+            button{
+                display: block;
+                width: 9rem;
+                height: 2.2rem;
+                border: solid 1px #ffffff;
+                background-color: #314a50;
+                color: #ffffff;
+                border-radius: 6px;
+                cursor: pointer;
+                outline: none;
+            }
+            img{
+                width: 8rem;
+            }
+        }
+    }
+    .slider{
+       
+        div{
+            outline: none;
+                    img{margin: auto;
+                    display: block;
+                    width: 6rem;
+                    padding-bottom: 1rem;
+                    opacity: .5;
+                    &:hover{
+                        opacity: 1;
+                    }
+                    }
+                    li{
+                        outline: none;
+                    }
+                    li:hover{
+                    border-bottom: 2px solid var(--primary-color);
+
+                    }
+
+        }
+    }
+}
+
+.pagingDots{
+    display: none;
+}
+.next{
+    outline: none;
+    transform: translateX(100%);
+    width: 3rem;
+    font-size: 1.2rem;
+    color: var(--white-color) !important;
+    font-weight: bold;
+    background-color: transparent !important;
+}
+.prev{
+    outline: none;
+    transform: translateX(-100%);
+    width: 3rem;
+    font-size: 1.2rem;
+    color: var(--white-color) !important;
+    font-weight: bold;
+    background-color: transparent !important;
+}

@@ -1,0 +1,44 @@
+.menu{   
+     background:  url("../../assets/Image7@3x.png") no-repeat ;
+     background-position: 10% 0%;
+     background-size: cover;
+     
+     
+    .navbar{
+    display: flex;
+    width: 70%;
+    margin: auto;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 1rem;
+    z-index: 30;
+    .logo{
+        svg{
+            margin-right: 1.2rem;
+            width: 1.5rem;
+        }
+        img{
+            object-fit: contain;
+            width: 10rem;
+        }
+    }
+    .links{
+        margin-left: 10rem;
+        ul{
+            li{
+                display: inline-block;
+                margin-right: 2rem;
+                list-style-type: none;
+                color: var(--white-color);
+            }
+        }
+    }
+    .icons{
+        svg{
+            margin-right: 1.2rem;
+            width: 1.5rem;
+        }
+    }
+}
+}
+

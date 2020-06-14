@@ -1,0 +1,55 @@
+.showcase{
+    background-image: url("../../assets/Image7@3x.png") ;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    .content{
+        height: 100%;
+        width: 70%;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-around;
+        flex-direction: column;
+        margin: auto;
+        img{
+            transform: translateY(7rem);
+            width: 15rem;
+        }
+        .heading{
+            margin-top: 3rem;
+        span{
+                color: var(--white-color);
+                font-size: 3rem;
+                width: 100%;
+                font-family: Metropolis;
+
+            }
+            p{  margin: 0;
+
+                font-family: Metropolis;
+
+                font-weight: bold;
+                color: var(--white-color);
+                font-size: 4.5rem;
+
+            }
+            button{
+                background-color: transparent;
+                border: 1px solid var(--white-color);
+                display: block;
+                width: 8rem;
+                padding: .5rem;
+                border-radius: 5px;
+                color: var(--white-color);
+                margin-top: 2rem;
+            }
+        }
+        
+    }
+}
