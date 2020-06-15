@@ -79,11 +79,15 @@
         div{
             display: flex;
             align-items: center;
+            img{
+                display: block;
+                width: 6rem;
+            }
         }
         span{
-            margin-right: .7rem;
+            margin-right: .5rem;
             color: var(--white-color);
-            font-size: 12px;
+            font-size: 10px;
         }
     }
 }

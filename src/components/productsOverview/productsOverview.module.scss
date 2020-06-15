@@ -1,0 +1,51 @@
+.productsOverview{
+    width: 80%;
+    margin:5rem auto;
+    p{
+        font-size: 2.5rem;
+        span{
+            font-weight: bold;
+        }
+    }
+
+    li{
+        outline: none;
+    }
+
+    div{
+        outline: none;
+    }
+    .pagingDots{
+        display: none;
+    }
+    .next{
+        outline: none;
+        transform: translateX(100%);
+        width: 3rem;
+        font-size: 1.2rem;
+        color: var(--primary-color) !important;
+        font-weight: bold;
+        background-color: transparent !important;
+    }
+    .prev{
+        outline: none;
+        transform: translateX(-100%);
+        width: 3rem;
+        font-size: 1.2rem;
+        color: var(--primary-color) !important;
+        font-weight: bold;
+        background-color: transparent !important;
+    }
+
+    button{
+        background-color: var(--white-color);
+                border: 1px solid var(--primary-color);
+                display: block;
+                width: 8rem;
+                padding: .5rem;
+                border-radius: 5px;
+                color: var(--primary-color);
+                margin: 2rem auto;
+                cursor: pointer;
+    }
+}

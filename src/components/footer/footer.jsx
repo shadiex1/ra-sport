@@ -7,7 +7,7 @@ import {ReactComponent as TwitterIcon } from "../../assets/icons/twitter.svg"
 import {ReactComponent as SendIcon } from "../../assets/icons/send.svg"
  
 import logo from "../../assets/Rectangle10.png";
-import nasnavLogo from "../../assets/Rectangle134.png"
+import nasnavLogo from "../../assets/nasnavwhitelogo.png"
 const footer = () => (
     <div className={styles.footer}>
         <div className={styles.footerContent}>
