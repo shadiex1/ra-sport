@@ -33,7 +33,11 @@ const products = [
     {id:2,img:product2,brand:"Adidas",brandLogo:adidasBrand,title:'Union Heather 20" Amphibian Boardshorts',price:800},
     {id:3,img:product3,brand:"Timberland",brandLogo:timberlandBrand,title:'Union Heather 20" Amphibian Boardshorts',price:800},
     {id:4,img:product4,brand:"Adidas",brandLogo:adidasBrand,title:'Union Heather 20" Amphibian Boardshorts',price:800},
-    {id:5,img:product5,brand:"Reebok",brandLogo:reebokBrand,title:'Union Heather 20" Amphibian Boardshorts',price:800,oldPrice:1000}
+    {id:5,img:product5,brand:"Reebok",brandLogo:reebokBrand,title:'Union Heather 20" Amphibian Boardshorts',price:800,oldPrice:1000},
+    {id:6,img:product3,brand:"Timberland",brandLogo:timberlandBrand,title:'Union Heather 20" Amphibian Boardshorts',price:800},
+    {id:7,img:product1,brand:"Reebook",brandLogo:reebokBrand,title:'Union Heather 20" Amphibian Boardshorts',price:800,oldPrice:1000},
+
+
    
 ]
 

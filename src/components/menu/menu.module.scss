@@ -21,11 +21,20 @@
             object-fit: contain;
             width: 10rem;
         }
+        a{
+            text-decoration: none;
+        }
     }
     .links{
         margin-left: 10rem;
         ul{
+            a{
+                margin-right: 2rem;
+                color: var(--white-color);
+                text-decoration: none;
+                }
             li{
+                
                 display: inline-block;
                 margin-right: 2rem;
                 list-style-type: none;
