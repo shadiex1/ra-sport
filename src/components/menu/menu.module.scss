@@ -1,5 +1,5 @@
 .menu{   
-     background:  url("../../assets/Image7@3x.png") no-repeat ;
+     background:  url("../../assets/grbkda.png") no-repeat ;
      background-position: 10% 0%;
      background-size: cover;
      
@@ -14,9 +14,14 @@
     z-index: 30;
     .logo{
         svg{
+             path{
+                 fill: var(--white-color);
+            }
             margin-right: 1.2rem;
             width: 1.5rem;
+        
         }
+        
         img{
             object-fit: contain;
             width: 10rem;
@@ -46,6 +51,9 @@
         svg{
             margin-right: 1.2rem;
             width: 1.5rem;
+            path{
+                fill: var(--white-color);
+           }
         }
     }
 }
