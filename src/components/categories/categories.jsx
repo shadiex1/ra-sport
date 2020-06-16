@@ -5,12 +5,15 @@ import categroyImg1 from "../../assets/categories/Image112.png";
 import categroyImg2 from "../../assets/categories/Image113.png";
 import categroyImg3 from "../../assets/categories/Image114.png";
 import categroyImg4 from "../../assets/categories/Image115.png";
+import pattern1 from "../../assets/patterns/Group159.png"
 
 
 const categories = props => (
     <div className={styles.categories}>
+    <div className={styles.categoriesContainer}>
         <span>LET'S SHOP</span>
         <p>BY CATEGORY</p>
+        <img src={pattern1} alt="patter"/>
         <Carousel
         wrapAround
         defaultControlsConfig={{
@@ -40,6 +43,7 @@ const categories = props => (
             </div>
         </Carousel>
 
+    </div>
     </div>
 )
 

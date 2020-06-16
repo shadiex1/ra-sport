@@ -1,7 +1,10 @@
 import React, { Component } from "react";
 import styles from "./shopPage.module.scss";
 import MenuWhite from "../../components/menu -white/menu-white";
-import Banner from "../../components/address banner/Banner"
+import Banner from "../../components/address banner/Banner";
+import ShopSidebar from "../../components/shopSidebar/shopSidebar";
+import Catalog from "../../components/catalog/catalog";
+import Footer from "../../components/footer/footer"
 
 
 class ShopPage extends Component {
@@ -10,6 +13,12 @@ class ShopPage extends Component {
             <div className={styles.ShopPage}>
                 <MenuWhite/>
                <Banner/>
+               <div className={styles.catalog}>
+                   <ShopSidebar/>
+               <Catalog/>
+               </div>
+               <Footer/>
+               
             </div>
         )
     }

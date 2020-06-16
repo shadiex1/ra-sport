@@ -1,8 +1,28 @@
 .categories{
+        background-image: url("../../assets/MaskGroup38.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+
+}
+
+.categoriesContainer{
     width: 70%;
-    margin: 7rem auto;
+    margin:  auto;
+    position: relative;
+
     li{
         outline: none;
+        cursor: default;
+    }
+    img{
+        position: absolute;
+        top: -30%;
+        left: 95%;
     }
     span{
         color: #1d1d1d;
@@ -58,7 +78,7 @@
     font-size: 1.2rem;
     color: var(--primary-color) !important;
     font-weight: bold;
-    background-color: var(--white-color) !important;
+    background-color: transparent !important;
     height: 3rem;
     border-radius: 50%;
 }

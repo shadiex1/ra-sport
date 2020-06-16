@@ -10,6 +10,7 @@
 
     li{
         outline: none;
+        cursor: default;
     }
 
     div{
@@ -47,5 +48,9 @@
                 color: var(--primary-color);
                 margin: 2rem auto;
                 cursor: pointer;
+                &:hover{
+                    color: var(--white-color);
+                    background-color: var(--primary-color);
+                }
     }
 }
