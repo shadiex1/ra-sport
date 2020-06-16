@@ -1,10 +1,12 @@
 import React from "react";
 import styles from "./stats.module.scss";
 
-import {ReactComponent as PinIcon } from "../../assets/icons/pin.svg"
-
+import pattern from "../../assets/patterns/Group12.png"
+import mapPattern from "../../assets/patterns/Group158.png"
 
 const stats = ()=>(
+    <div className={styles.statsContainer}>
+        <img className={styles.pattern} src={pattern} alt="pattern"/>
     <div className={styles.stats}>
         <div className={styles.brandsNumber}>
             <span>13 <sup>+</sup></span>
@@ -27,11 +29,12 @@ const stats = ()=>(
                     <p>CITIES</p>
                 </div>
                 <div className={styles.locationBox}>
-                    <PinIcon/>
+                    <img src={mapPattern} alt="map pattern"/>
                     <p>Store locator</p>
             </div>            
 </div>
         </div>
+    </div>
     </div>
 )
 
