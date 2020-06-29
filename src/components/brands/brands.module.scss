@@ -42,6 +42,10 @@
                 border-radius: 6px;
                 cursor: pointer;
                 outline: none;
+                &:hover{
+                    color: #314a50;
+                    background-color: white;
+                }
             }
             img{
                 width: 8rem;

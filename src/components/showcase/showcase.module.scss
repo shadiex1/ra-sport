@@ -27,12 +27,10 @@
                 color: var(--white-color);
                 font-size: 3rem;
                 width: 100%;
-                font-family: Metropolis;
 
             }
             p{  margin: 0;
 
-                font-family: Metropolis;
 
                 font-weight: bold;
                 color: var(--white-color);
@@ -40,7 +38,7 @@
 
             }
             button{
-                background-color: transparent;
+                background-color: #22aea5;
                 border: 1px solid var(--white-color);
                 display: block;
                 width: 8rem;
@@ -48,8 +46,12 @@
                 border-radius: 5px;
                 color: var(--white-color);
                 margin-top: 2rem;
+                cursor: pointer;
 
-                
+                &:hover{
+                    background: var(--white-color);
+                    color: var(--primary-color);
+                }
             }
         }
         

@@ -14,6 +14,7 @@
     z-index: 30;
     .logo{
         svg{
+            cursor: pointer;
              path{
                  fill: var(--white-color);
             }
@@ -44,15 +45,21 @@
                 margin-right: 2rem;
                 list-style-type: none;
                 color: var(--white-color);
+                cursor: pointer;
             }
         }
     }
     .icons{
+        cursor: pointer;
         svg{
             margin-right: 1.2rem;
             width: 1.5rem;
+            
             path{
                 fill: var(--white-color);
+           }
+           &:hover{
+               path{fill: var(--primary-color);}
            }
         }
     }

@@ -23,7 +23,7 @@ class ProductsOverview extends Component {
             nextButtonClassName: `${styles.next}`,
             pagingDotsClassName: `${styles.pagingDots}`,
           }}
-          slidesToShow="5"
+          slidesToShow={5}
         >
             {this.state.products.map(product=>(
                 <Card 

@@ -8,15 +8,16 @@
         }
     }
 
+    
     li{
         
         outline: none;
         cursor: default;
+        margin:  -.5rem !important;
+
     }
 
-    div{
-        outline: none;
-    }
+    
     .pagingDots{
         display: none;
     }

@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30">
+    <defs>
+        <style>
+            .prefix__cls-1{fill:#c6c6c6}
+        </style>
+    </defs>
+    <g id="prefix__instagram" transform="translate(.001)">
+        <path id="prefix__Path_27" d="M21.878 0H8.12A8.13 8.13 0 0 0 0 8.121v13.758A8.13 8.13 0 0 0 8.12 30h13.758A8.13 8.13 0 0 0 30 21.879V8.121A8.13 8.13 0 0 0 21.878 0zm6.362 21.879a6.369 6.369 0 0 1-6.362 6.362H8.12a6.369 6.369 0 0 1-6.362-6.362V8.121A6.369 6.369 0 0 1 8.12 1.759h13.758a6.369 6.369 0 0 1 6.362 6.362zm0 0" class="prefix__cls-1" data-name="Path 27"/>
+        <path id="prefix__Path_28" d="M124.207 116a8.2 8.2 0 1 0 8.2 8.2 8.212 8.212 0 0 0-8.2-8.2zm0 14.647a6.444 6.444 0 1 1 6.444-6.444 6.452 6.452 0 0 1-6.444 6.448zm0 0" class="prefix__cls-1" data-name="Path 28" transform="translate(-109.208 -109.207)"/>
+        <path id="prefix__Path_29" d="M360.4 66.285a2.424 2.424 0 1 0 2.424 2.424 2.427 2.427 0 0 0-2.424-2.424zm0 3.089a.665.665 0 1 1 .665-.665.666.666 0 0 1-.665.665zm0 0" class="prefix__cls-1" data-name="Path 29" transform="translate(-337.003 -62.401)"/>
+    </g>
+</svg>

@@ -17,7 +17,7 @@ import timberlandLogo from "../../assets/brands/timberland.png";
 const brands=()=>(
     <div className={styles.brandsContainer}>
         <div className={styles.brands}>
-        <p>LET'S SHOP By <span>BRANDS</span></p>
+        <p>LET'S SHOP BY <span>BRANDS</span></p>
         <div className={styles.board}>
             <div className={styles.descrption}>
                 <img src={adidasLogo} alt="brand"/>
