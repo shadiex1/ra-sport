@@ -7,15 +7,21 @@
             font-weight: bold;
         }
     }
-
     
-    li{
-        
+    ul{
+        margin: 16px !important;
+        li{
+            overflow: visible !important;
+            margin: 1.5rem;
         outline: none;
         cursor: default;
-        margin:  -.5rem !important;
+        // margin:  -.5rem !important;
+        // height: 120% !important;
 
     }
+    }
+    
+    
 
     
     .pagingDots{

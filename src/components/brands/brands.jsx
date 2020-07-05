@@ -14,8 +14,10 @@ import rockportLogo from "../../assets/brands/rockport.png";
 import roxyLogo from "../../assets/brands/roxy.png";
 import timberlandLogo from "../../assets/brands/timberland.png";
 
-const brands=()=>(
-    <div className={styles.brandsContainer}>
+const brands=()=>{
+    // const currentImg =
+
+        return( <div className={styles.brandsContainer}>
         <div className={styles.brands}>
         <p>LET'S SHOP BY <span>BRANDS</span></p>
         <div className={styles.board}>
@@ -51,5 +53,5 @@ const brands=()=>(
         </div>
     </div>
 )
-
+            }
 export default brands
