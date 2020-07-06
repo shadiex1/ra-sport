@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="18.642" height="20" viewBox="0 0 18.642 20">
+    <defs>
+        <style>
+            .prefix__cls-1{fill:#fff}
+        </style>
+    </defs>
+    <g id="prefix__trash" transform="translate(-17.379)">
+        <g id="prefix__Group_53" data-name="Group 53" transform="translate(17.379 3.003)">
+            <g id="prefix__Group_52" data-name="Group 52">
+                <g id="prefix__Group_51" data-name="Group 51">
+                    <path id="prefix__Path_25" d="M306.712 175.113l-1.566-.057-.339 9.269 1.566.057z" class="prefix__cls-1" data-name="Path 25" transform="translate(-293.579 -171.22)"/>
+                    <path id="prefix__Rectangle_42" d="M0 0H1.567V9.269H0z" class="prefix__cls-1" data-name="Rectangle 42" transform="translate(8.538 3.864)"/>
+                    <path id="prefix__Path_26" d="M160.324 184.318l-.339-9.269-1.566.057.339 9.269z" class="prefix__cls-1" data-name="Path 26" transform="translate(-152.91 -171.214)"/>
+                    <path id="prefix__Path_27" d="M17.379 76.867v1.567h1.632l1.295 14.716a.783.783 0 0 0 .78.715h11.2a.783.783 0 0 0 .78-.715l1.3-14.716h1.659v-1.567zM31.57 92.3H21.8l-1.22-13.864h12.21z" class="prefix__cls-1" data-name="Path 27" transform="translate(-17.379 -76.867)"/>
+                </g>
+            </g>
+        </g>
+        <g id="prefix__Group_55" data-name="Group 55" transform="translate(22.836)">
+            <g id="prefix__Group_54" data-name="Group 54">
+                <path id="prefix__Path_28" d="M163.5 0h-5.117a1.307 1.307 0 0 0-1.305 1.305v2.48h1.567V1.567h4.6v2.219h1.555V1.305A1.307 1.307 0 0 0 163.5 0z" class="prefix__cls-1" data-name="Path 28" transform="translate(-157.076)"/>
+            </g>
+        </g>
+    </g>
+</svg>

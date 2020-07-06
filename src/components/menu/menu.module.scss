@@ -2,7 +2,6 @@
      background:  url("../../assets/grbkda.png") no-repeat ;
      background-position: 10% 0%;
      background-size: cover;
-     
      .toggle{
          display: inline-block;
      }
@@ -13,6 +12,7 @@
     justify-content: space-between;
     align-items: center;
     padding-top: 1rem;
+    padding: 1rem 0 ;
     z-index: 30;
     .logo{
         svg{
@@ -53,6 +53,13 @@
     }
     .icons{
         cursor: pointer;
+        .icon{
+            display: inline-block;
+            // width: 100%;
+            height: 3rem;
+            background-color: var(--primary-color) ;
+            text-align: center;
+        }
         svg{
             margin-right: 1.2rem;
             width: 1.5rem;
@@ -60,9 +67,9 @@
             path{
                 fill: var(--white-color);
            }
-           &:hover{
-               path{fill: var(--primary-color);}
-           }
+        //    &:hover{
+        //        path{fill: var(--primary-color);}
+        //    }
         }
     }
 }
