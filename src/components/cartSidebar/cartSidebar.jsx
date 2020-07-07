@@ -14,7 +14,7 @@ const cartSidebar = props =>{
 //   {attachdstyles.join(" ")}
     return(
         <React.Fragment>
-         <Backdrop show={open} clicked={closed} />
+         {/* <Backdrop show={open} clicked={closed} /> */}
 
         <div className={styles.cartSidebar}>
             <CartItem/>

@@ -2,7 +2,9 @@ import React, { Component } from "react";
 import styles from "./productsOverview.module.scss";
 import Carousel from 'nuka-carousel';
 import products from "../../services/products";
-import Card from "../card/card"
+import Card from "../card/card";
+import { Link} from "react-router-dom"
+
 
 
 class ProductsOverview extends Component {
@@ -27,6 +29,7 @@ class ProductsOverview extends Component {
         >
             {this.state.products.map(product=>(
                 <Card 
+                // onClick={}
                 img={product.img} 
                 key={product.id} 
                 brand={product.brand} 
