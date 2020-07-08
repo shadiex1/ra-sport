@@ -8,8 +8,40 @@ import { Link} from "react-router-dom"
 
 
 class ProductsOverview extends Component {
-  state = {products};
+  state = {products,
+    width: 1100
+  };
+  updateDimensions() {
+    if (window.innerWidth < 500) {
+      this.setState({ width: 450});
+    } else {
+      let update_width = window.innerWidth - 100;
+      this.setState({ width: update_width });
+    }
+  }
+  componentDidMount() {
+    this.updateDimensions();
+    window.addEventListener("resize", this.updateDimensions.bind(this));
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener("resize", this.updateDimensions.bind(this));
+  }
+  
   render() {
+    let slides = 0;
+    let enabled=false
+
+if (this.state.width > 1200) {
+  slides = 5;
+} else if (this.state.width >900) {
+   slides = 4;
+    // enabled=true
+} else if (this.state.width > 500) {
+  slides = 2;
+   enabled=true
+}else {slides = 1;  enabled=true}
+;
     return (
       <div className={styles.productsOverview}>
         <p>
@@ -17,6 +49,7 @@ class ProductsOverview extends Component {
         </p>
         <Carousel
           wrapAround
+          withoutControls={enabled}
           defaultControlsConfig={{
             containerClassName: `${styles.container}`,
             nextButtonText: ">",
@@ -25,7 +58,7 @@ class ProductsOverview extends Component {
             nextButtonClassName: `${styles.next}`,
             pagingDotsClassName: `${styles.pagingDots}`,
           }}
-          slidesToShow={5}
+          slidesToShow={slides}
         >
             {this.state.products.map(product=>(
                 <Card 

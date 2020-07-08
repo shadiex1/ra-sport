@@ -6,9 +6,43 @@ import categroyImg2 from "../../assets/categories/Image113.png";
 import categroyImg3 from "../../assets/categories/Image114.png";
 import categroyImg4 from "../../assets/categories/Image115.png";
 import pattern1 from "../../assets/patterns/Group159.png"
+import { render } from "@testing-library/react";
+import { Component } from "react";
 
 
-const categories = props => (
+class Categories extends Component{ 
+    
+    state = {
+        width: 1100,
+      };
+      updateDimensions() {
+        if (window.innerWidth < 500) {
+          this.setState({ width: 450});
+        } else {
+          let update_width = window.innerWidth - 100;
+          this.setState({ width: update_width });
+        }
+      }
+      componentDidMount() {
+        this.updateDimensions();
+        window.addEventListener("resize", this.updateDimensions.bind(this));
+      }
+    
+      componentWillUnmount() {
+        window.removeEventListener("resize", this.updateDimensions.bind(this));
+      }
+    render(){
+        let slides = 0;
+        let enabled=false
+
+    if (this.state.width > 800) {
+      slides = 4;
+    } else if (this.state.width > 500) {
+       slides = 2;
+        enabled=true
+    } else {slides = 1;  enabled=true}
+    ;
+    return(
     <div className={styles.categories}>
     <div className={styles.categoriesContainer}>
         <span>LET'S SHOP</span>
@@ -16,6 +50,7 @@ const categories = props => (
         <img src={pattern1} alt="patter"/>
         <Carousel
         wrapAround
+        withoutControls={enabled}
         defaultControlsConfig={{
             containerClassName: `${styles.container}`,
             nextButtonText: ">",
@@ -24,7 +59,7 @@ const categories = props => (
             nextButtonClassName: `${styles.next}`,
             pagingDotsClassName: `${styles.pagingDots}`,
           }}
-        slidesToShow="4"
+        slidesToShow={slides}
         >
             <div style={{backgroundImage:`url(${categroyImg1})`}} className={styles.category}>
              <div className={styles.title}> Shoes</div>
@@ -45,6 +80,7 @@ const categories = props => (
 
     </div>
     </div>
-)
+)}
+        }
 
-export default categories
+export default Categories

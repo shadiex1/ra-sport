@@ -8,12 +8,14 @@ import {NavLink , Link} from "react-router-dom"
 import logo from "../../assets/Rectangle3.png";
 import MenuSidebar from "../../components/menuSidebar/menuSidebar";
 import CartSidebar from "../cartSidebar/cartSidebar";
-import Search from "../search/search"
+import Search from "../search/search";
+import {categories} from "../../services/Data.json"
 class Menu extends Component {
   state={
     showCart: false,
     showMenuSidebar: false,
-    showSearchbar:false
+    showSearchbar:false,
+    categories:categories
   }
   ToggleCart=()=>{
     this.setState((prevState) => {
@@ -40,7 +42,7 @@ class Menu extends Component {
     render(){
         return (
           <div className={styles.menu}>
-            <MenuSidebar open={this.state.showMenuSidebar}
+            <MenuSidebar categories={categories} open={this.state.showMenuSidebar}
           closed={this.showMenuSidebarClosedHandler}/>
           {this.state.showCart ? <CartSidebar open={this.state.showCart} closed={this.showCartClosedHandler}/> : null}
            
@@ -67,7 +69,7 @@ class Menu extends Component {
               <div className={styles.icon} onClick={this.ToggleSearchbar}>
               <SearchIcon />
               </div>
-              <Link to={process.env.PUBLIC_URL+"/signin"}>
+              <Link className={styles.usericon} to={process.env.PUBLIC_URL+"/signin"}>
               <UsersIcon />
               </Link>
               <div className={styles.icon} onClick={this.ToggleCart}>

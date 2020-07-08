@@ -1,0 +1,47 @@
+
+{
+  "categories":[{
+    "alias": "shop"
+  },
+  {
+    "alias": "men",
+    "name":"men",
+    "id":1,
+    "children": [
+      {
+        "alias": "shirts",
+        "name":"shirts",
+        "id":1,
+        "children": [
+          {
+            "alias": "all"
+          },
+          { "alias": "shirt name" },
+          { "alias": "shirt name" },
+          { "alias": "shirt name" }
+        ]
+      },
+      {
+         " alias":"Training "
+      },
+      {
+          "alias":"Swimming"
+      }
+    ]
+  },
+  {
+      "alias":"Women"
+  },
+  {
+      "alias":"Kids"
+  },
+  {
+      "alias":"Site Locator"
+  },
+  {
+      "alias":"Career"
+  },
+  {
+      "alias":"Contact us"
+  }]
+}

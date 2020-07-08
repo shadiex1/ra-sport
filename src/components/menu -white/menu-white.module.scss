@@ -1,69 +1,170 @@
+// .menu{   
+//    background-color: var(--white-color);
+    
+    
+//    .navbar{
+//    display: flex;
+//    width: 70%;
+//    margin: auto;
+//    justify-content: space-between;
+//    align-items: center;
+//    padding-top: 1rem;
+//    z-index: 30;
+//    .logo{
+//        svg{
+//            margin-right: 1.2rem;
+//            width: 1.5rem;
+//            path{
+//             fill: var(--primary-color);
+//         }
+//        }
+//        img{
+//            object-fit: contain;
+//            width: 10rem;
+//        }
+//        a{
+//            text-decoration: none;
+//        }
+//    }
+//    .links{
+//        margin-left: 10rem;
+//        ul{
+//            a{
+//             display: inline-block;
+//             margin: 0 2rem 1rem 0;
+//             list-style-type: none;
+//             color: var(--black-color);
+//             cursor: pointer;
+//                text-decoration: none;
+//                }
+//            li{
+               
+//                display: inline-block;
+//                margin: 0 2rem 1rem 0;
+//                list-style-type: none;
+//                color: var(--black-color);
+//                cursor: pointer;
+               
+
+               
+//            }
+
+//            .navLink{
+//                border-bottom: 2px solid var(--primary-color);
+//                font-weight: bold;
+//            }
+//        }
+//    }
+//    .icons{
+//        svg{
+//            margin-right: 1.2rem;
+//            width: 1.5rem;
+//            path{
+//                fill: var(--primary-color);
+//            }
+//        }
+//    }
+// }
+// }
+
 .menu{   
-   background-color: var(--white-color);
+    //  background:  url("../../assets/Image7@3x.png") no-repeat ;
+    //  background-position: 0% 10%;
+    //  background-size: cover;
+    background-color: var(--white-color);
     
-    
-   .navbar{
-   display: flex;
-   width: 70%;
-   margin: auto;
-   justify-content: space-between;
-   align-items: center;
-   padding-top: 1rem;
-   z-index: 30;
-   .logo{
-       svg{
-           margin-right: 1.2rem;
-           width: 1.5rem;
-           path{
-            fill: var(--primary-color);
-        }
-       }
-       img{
-           object-fit: contain;
-           width: 10rem;
-       }
-       a{
-           text-decoration: none;
-       }
-   }
-   .links{
-       margin-left: 10rem;
-       ul{
-           a{
-            display: inline-block;
-            margin: 0 2rem 1rem 0;
-            list-style-type: none;
-            color: var(--black-color);
+     z-index: 30;
+     position: fixed;       
+     overflow: hidden;
+    width: 100%;
+    top: 0;
+    left: 0;
+     .toggle{
+         display: inline-block;
+     }
+    .navbar{
+    display: flex;
+    width: 70%;
+    margin: auto;
+    justify-content: space-between;
+    align-items: center;
+    // padding-top: 1rem;
+    padding: 1rem 0 ;
+    z-index: 30 !important;
+    .logo{
+        svg{
             cursor: pointer;
-               text-decoration: none;
-               }
-           li{
-               
-               display: inline-block;
-               margin: 0 2rem 1rem 0;
-               list-style-type: none;
-               color: var(--black-color);
-               cursor: pointer;
-               
-
-               
+             path{
+                 fill: var(--primary-color);
+            }
+            margin-right: 1.2rem;
+            width: 1.5rem;
+        
+        }
+        
+        img{
+            object-fit: contain;
+            width: 10rem;
+        }
+        a{
+            text-decoration: none;
+        }
+    }
+    .links{
+        margin-left: 10rem;
+        ul{
+            a{
+                margin-right: 2rem;
+                color: var(--black-color);
+                text-decoration: none;
+                }
+            li{
+                
+                display: inline-block;
+                margin-right: 2rem;
+                list-style-type: none;
+                color: var(--black-color);
+                cursor: pointer;
+            }
+            .navLink{
+                               border-bottom: 2px solid var(--primary-color);
+                               font-weight: bold;
+                           }
+        }
+    }
+    .icons{
+        cursor: pointer;
+        .icon{
+            display: inline-block;
+            // width: 100%;
+            height: 3rem;
+            // background-color: var(--primary-color) ;
+            text-align: center;
+        }
+        svg{
+            margin-right: 1.2rem;
+            width: 1.5rem;
+            
+            path{
+                fill: var(--primary-color);
            }
-
-           .navLink{
-               border-bottom: 2px solid var(--primary-color);
-               font-weight: bold;
-           }
-       }
-   }
-   .icons{
-       svg{
-           margin-right: 1.2rem;
-           width: 1.5rem;
-           path{
-               fill: var(--primary-color);
-           }
-       }
-   }
+        //    &:hover{
+        //        path{fill: var(--primary-color);}
+        //    }
+        }
+    }
 }
+}
+
+.lightMenu{
+    .logo{
+        svg{
+            cursor: pointer;
+             path{
+                 fill: var(--primary-color);
+            }
+    }
+}
+
 }
 

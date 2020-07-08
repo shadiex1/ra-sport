@@ -14,14 +14,14 @@ const cartSidebar = props =>{
 //   {attachdstyles.join(" ")}
     return(
         <React.Fragment>
-         {/* <Backdrop show={open} clicked={closed} /> */}
+         <Backdrop show={open} clicked={closed} />
 
         <div className={styles.cartSidebar}>
+            <div className={styles.item}>
             <CartItem/>
-            {/* <CartItem/>
-            <CartItem/>
-            <CartItem/>
-            <CartItem/> */}
+      
+            </div>
+           
             <div className={styles.priceContainer}>
                 <span>total</span>
                 <div>

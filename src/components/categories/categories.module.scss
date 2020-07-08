@@ -86,3 +86,13 @@
 .pagingDots{
     display: none;
 }
+
+@media screen and (max-width:900px){
+    .categoriesContainer{
+        img{
+            top: -50%;
+        left: 10%;
+        opacity: .5;
+        }
+    }
+}

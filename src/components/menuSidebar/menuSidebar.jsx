@@ -7,13 +7,14 @@ import styles from "./menuSidebar.module.scss";
 // import { Link } from "react-router-dom";
 import logo from "../../assets/ra-sport-logo.png";
 import {CloseIcon} from "../svg/svg";
+import Accordion from "../accordion/accordion";
 const menuSidebar = (props) => {
   let attachdstyles = [styles.sidebar, styles.Close];
   if (props.open) {
     attachdstyles = [styles.sidebar, styles.Open];
   }
 
-  const { org, organizationName, categories, closed, open } = props;
+  const { org, organizationName, categories, closed, open  } = props;
 
   return (
     <React.Fragment>
@@ -61,7 +62,7 @@ const menuSidebar = (props) => {
             <CloseIcon />
           </div>
         </div>
-        {/* <Accordion categories={categories} /> */}
+        <Accordion toggleSidebar={closed} categories={categories} />
       </div>
     </React.Fragment>
   );

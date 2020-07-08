@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Component } from "react";
 import styles from "./brands.module.scss";
 import showcaseImg from "../../assets/brands/Image5.png"
 import Carousel from "nuka-carousel";
@@ -14,7 +14,40 @@ import rockportLogo from "../../assets/brands/rockport.png";
 import roxyLogo from "../../assets/brands/roxy.png";
 import timberlandLogo from "../../assets/brands/timberland.png";
 
-const brands=()=>{
+class Brands extends Component{
+    state = {
+        width: 1100,
+      };
+      updateDimensions() {
+        if (window.innerWidth < 500) {
+          this.setState({ width: 450});
+        } else {
+          let update_width = window.innerWidth - 100;
+          this.setState({ width: update_width });
+        }
+      }
+      componentDidMount() {
+        this.updateDimensions();
+        window.addEventListener("resize", this.updateDimensions.bind(this));
+      }
+    
+      componentWillUnmount() {
+        window.removeEventListener("resize", this.updateDimensions.bind(this));
+      }
+    render(){
+        let slides = 0;
+        let enabled=false
+
+    if (this.state.width > 1000) {
+      slides = 6;
+    } else if (this.state.width > 800) {
+       slides = 4;
+        enabled=true
+    }else if (this.state.width > 500) {
+        slides = 2;
+         enabled=true
+     } else {slides = 1;  enabled=true}
+    ;
     // const currentImg =
 
         return( <div className={styles.brandsContainer}>
@@ -25,11 +58,14 @@ const brands=()=>{
                 <img src={adidasLogo} alt="brand"/>
                 <button>Shop now</button>
             </div>
-            <img className={styles.showcaseImg} src={showcaseImg} alt="brand overview"/>
+            <div className={styles.showcaseImg}>
+            {/* <img  src={showcaseImg} alt="brand overview"/> */}
+            </div>
         </div>
         <div className={styles.slider}>
             <Carousel  
             wrapAround
+            withoutControls={enabled}
             defaultControlsConfig={{
                 nextButtonText: ">",
                 prevButtonText: "<",
@@ -37,7 +73,7 @@ const brands=()=>{
                 nextButtonClassName: `${styles.next}`,
                 pagingDotsClassName: `${styles.pagingDots}`,
               }}
-            slidesToShow="6">
+            slidesToShow={slides}>
             <img src={dcsportsLogo} alt="brand"/>
             <img src={geoxLogo} alt="brand"/>
             <img src={gosportLogo} alt="brand"/>
@@ -54,4 +90,6 @@ const brands=()=>{
     </div>
 )
             }
-export default brands
+}
+
+export default Brands

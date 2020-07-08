@@ -91,3 +91,24 @@
         }
     }
 }
+
+@media screen and (max-width:600px){
+    .footer{
+        .footerContent{
+            flex-direction: column;
+        }
+        .copyrights{
+            flex-direction: column;
+            div{
+                width: 100%;
+                span{
+                    margin: 0 .5rem;
+                }
+                
+            }
+            span{
+                margin-bottom: 1.2rem;
+            }
+        }
+    }
+}

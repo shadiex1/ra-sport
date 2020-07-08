@@ -1,0 +1,115 @@
+.Panel {
+  width: 100%;
+//   padding: .3rem;
+  .title {
+    button, a {
+      display: block;
+      width: 90%;
+      background-color: transparent;
+      border: 0;
+      text-align: left;
+      font-size: 1rem;
+      font-weight: 600;
+      text-transform: capitalize;
+      padding: 6px 20px;   
+    //    padding: .5rem;
+        outline: none;
+      // border-bottom: 2px solid #111111;
+      color: #212121;
+      transition: all 100ms ease-in-out;
+      .icon {
+        width: 24px;
+        // height: 24px;
+        float: right;
+        display: block;
+        transition: all 1ms ease-in-out;
+        svg {
+          fill: var(--primary-color);
+          stroke: var(--primary-color);
+          stroke-width: 2px;
+          transform: rotate(90deg);
+          width: 40%;
+          height: 50%;
+          display: block;
+        }
+        &.open {
+          transform: rotate(180deg);
+        }
+      }
+      &:hover {
+        background-color: var(--primary-color);
+        color: var(--white-color);
+        border-color: var(--primary-color);
+        .icon{
+             svg {
+            fill: var(--white-color);
+            stroke: var(--white-color);
+        }
+        }
+       
+      }
+    }
+     
+  }
+  .body {
+    font-size: 0;
+    // padding-left: 30px;
+    button, a {
+    //   padding: 0 20px; 
+      font-size: 0;
+      border: 0;
+      color: #707070      ;
+    //   font-weight: 500 !important;
+      .icon {
+        width: 24px;
+        height: 0;
+        display: inline-block;
+        svg {
+            svg {
+                fill: var(--primary-color);
+                stroke: var(--primary-color);
+                stroke-width: 2px;
+                transform: rotate(90deg);
+                width: 40%;
+                height: 50%;
+                display: block;
+              }
+        }
+      }
+    }
+    a {
+      padding: 0 20px;
+      border: 0;
+    //   font-weight: 100;
+    }
+  }
+  &.selected{
+    // &>.title > button{
+    //   &> .icon > svg{
+    //   }
+    // }
+    &>.body {
+      font-size: 0.5rem;
+      transform: scaleY(1) translateY(0);
+      &> div {
+        // &.selected > .title > button {
+        // }
+        &> .title {
+          &> a {
+            padding: 6px 20px;
+            font-size: 0.8rem;
+            // color: red;
+            // font-weight: 500 !important;
+          }
+          &> button {
+            // padding: 6px 20px;
+            font-size: 0.8rem;
+            &> .icon {
+              height: 24px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

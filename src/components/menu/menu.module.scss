@@ -1,7 +1,16 @@
 .menu{   
-     background:  url("../../assets/grbkda.png") no-repeat ;
-     background-position: 6% 0%;
-     background-size: cover;
+    //  background:  url("../../assets/Image7@3x.png") no-repeat ;
+    //  background-position: 0% 10%;
+    //  background-size: cover;
+    // background: rgb(10,126,121);
+    background: linear-gradient(90deg, rgba(11,127,121,1) 9%, rgba(11,125,118,1) 27%, rgba(11,128,122,1) 47%, rgba(13,129,123,1) 75%, rgba(9,140,134,1) 88%, rgba(19,150,145,1) 100%);     z-index: 30;
+     position: fixed;       
+     overflow: hidden;
+     border: transparent;
+     outline: transparent;
+    width: 100vw;
+    top: 0;
+    left: 0;
      .toggle{
          display: inline-block;
      }
@@ -13,7 +22,7 @@
     align-items: center;
     padding-top: 1rem;
     padding: 1rem 0 ;
-    z-index: 30;
+    z-index: 30 !important;
     .logo{
         svg{
             cursor: pointer;
@@ -75,3 +84,32 @@
 }
 }
 
+@media screen and (max-width:1300px){
+    .menu{
+        .navbar{
+            width: 95%;
+            .links{
+                margin: 0;
+            }
+        }
+    }
+}
+@media screen and (max-width:800px){
+    .menu{
+        .navbar{
+            width: 95%;
+            .links{
+                display: none;
+            }
+        }
+    }
+}
+@media screen and (max-width:500px){
+    .menu{
+        .navbar{
+            .usericon{
+                display: none;
+            }
+        }
+    }
+}
