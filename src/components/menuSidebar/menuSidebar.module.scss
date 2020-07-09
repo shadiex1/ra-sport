@@ -121,18 +121,14 @@
     width: 30%;
   }
 }
+@media screen and (max-width: 800px) {
+  .sidebar {
+    width: 50%;
+  }
+}
 @media screen and (max-width: 500px) {
   .sidebar {
     width: 100%;
-    .title {
-      display: none;
-    }
-    .mobile {
-      .mobileHeader,
-      .menu,
-      .user {
-        display: flex;
-      }
-    }
+    
   }
 }

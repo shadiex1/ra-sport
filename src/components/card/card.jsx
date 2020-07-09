@@ -2,9 +2,13 @@ import React from "react";
 import styles from "./card.module.scss";
 import { ReactComponent as ShoppingIcon } from "../../assets/icons/bag.svg";
 import { ReactComponent as WishlistIcon } from "../../assets/icons/heart.svg";
+import { NavLink} from "react-router-dom"
 
 const card = (props) => (
-  <div className={styles.card}>
+
+  <div className={styles.card}> 
+   <NavLink to={process.env.PUBLIC_URL+"/singleProduct"}> 
+
     <div className={styles.imgContainer}>
       <img src={props.img} alt="product" />
       <div className={styles.description}>
@@ -24,7 +28,9 @@ const card = (props) => (
       {props.oldPrice ? (
         <span className={styles.oldPrice}>{props.oldPrice} EGP</span>
       ) : null}
-    </div>
+    </div>  
+    </NavLink>
+
   </div>
 );
 

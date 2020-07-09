@@ -11,7 +11,7 @@ class SignIn extends Component {
         return(
             <div className={styles.signin}>
                 <MenuWhite/>
-                <Banner/>
+                <Banner path={"Home / my account"} title={"my account"} />
                 <SignInForm/>
                 <Footer/>
             </div>

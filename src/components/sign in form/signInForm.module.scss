@@ -7,7 +7,7 @@
         text-align: center;
         text-transform: uppercase;
         margin: auto;
-        width: 50%;
+        width: 100%;
         h3{
         font-weight: bold;
 
@@ -137,5 +137,38 @@
                 }
             }
         }
+    }
+}
+
+
+@media screen and (max-width:1000px){
+    .signIn{
+        width: 80%;
+        .form{
+            width: 70%;
+        }
+    }
+}
+@media screen and (max-width:800px){
+    .signIn{
+        width: 100%;
+    }
+}
+@media screen and (max-width:500px){
+    .signIn{
+       .form{
+        .inputGroup{
+            flex-direction: column;
+            margin: auto;
+            align-items: center;
+            justify-content: center;
+            input{
+                margin: 1rem;
+            }
+            label{
+                max-width: 50%;
+            }
+        }
+       }
     }
 }

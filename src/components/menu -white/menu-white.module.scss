@@ -1,76 +1,7 @@
-// .menu{   
-//    background-color: var(--white-color);
-    
-    
-//    .navbar{
-//    display: flex;
-//    width: 70%;
-//    margin: auto;
-//    justify-content: space-between;
-//    align-items: center;
-//    padding-top: 1rem;
-//    z-index: 30;
-//    .logo{
-//        svg{
-//            margin-right: 1.2rem;
-//            width: 1.5rem;
-//            path{
-//             fill: var(--primary-color);
-//         }
-//        }
-//        img{
-//            object-fit: contain;
-//            width: 10rem;
-//        }
-//        a{
-//            text-decoration: none;
-//        }
-//    }
-//    .links{
-//        margin-left: 10rem;
-//        ul{
-//            a{
-//             display: inline-block;
-//             margin: 0 2rem 1rem 0;
-//             list-style-type: none;
-//             color: var(--black-color);
-//             cursor: pointer;
-//                text-decoration: none;
-//                }
-//            li{
-               
-//                display: inline-block;
-//                margin: 0 2rem 1rem 0;
-//                list-style-type: none;
-//                color: var(--black-color);
-//                cursor: pointer;
-               
 
-               
-//            }
-
-//            .navLink{
-//                border-bottom: 2px solid var(--primary-color);
-//                font-weight: bold;
-//            }
-//        }
-//    }
-//    .icons{
-//        svg{
-//            margin-right: 1.2rem;
-//            width: 1.5rem;
-//            path{
-//                fill: var(--primary-color);
-//            }
-//        }
-//    }
-// }
-// }
 
 .menu{   
-    //  background:  url("../../assets/Image7@3x.png") no-repeat ;
-    //  background-position: 0% 10%;
-    //  background-size: cover;
+   
     background-color: var(--white-color);
     
      z-index: 30;
@@ -156,15 +87,35 @@
 }
 }
 
-.lightMenu{
-    .logo{
-        svg{
-            cursor: pointer;
-             path{
-                 fill: var(--primary-color);
+
+
+
+@media screen and (max-width:1300px){
+    .menu{
+        .navbar{
+            width: 95%;
+            .links{
+                margin: 0;
             }
+        }
     }
 }
-
+@media screen and (max-width:800px){
+    .menu{
+        .navbar{
+            width: 95%;
+            .links{
+                display: none;
+            }
+        }
+    }
 }
-
+@media screen and (max-width:500px){
+    .menu{
+        .navbar{
+            .usericon{
+                display: none;
+            }
+        }
+    }
+}

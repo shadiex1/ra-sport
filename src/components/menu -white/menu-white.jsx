@@ -72,7 +72,7 @@ class MenuWhite extends Component {
               <div className={styles.icon} onClick={this.ToggleSearchbar}>
               <SearchIcon />
               </div>
-              <Link to={process.env.PUBLIC_URL+"/signin"}>
+              <Link className={styles.usericon} to={process.env.PUBLIC_URL+"/signin"}>
               <UsersIcon />
               </Link>
               <div className={styles.icon} onClick={this.ToggleCart}>

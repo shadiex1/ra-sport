@@ -12,7 +12,7 @@ class ShopPage extends Component {
         return(
             <div className={styles.ShopPage}>
                 <MenuWhite/>
-               <Banner/>
+               <Banner path={"Home / Shop"} title={"shop"}/>
                <div className={styles.catalog}>
                    <ShopSidebar/>
                <Catalog/>

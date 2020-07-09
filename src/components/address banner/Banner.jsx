@@ -1,11 +1,11 @@
 import React from "react"
 import styles from "./Banner.module.scss";
 
-const Banner = () => (
+const Banner = (props) => (
     <div className={styles.banner}>
         <div>
-             <span>Home / Shop</span>
-        <h3>Shop</h3>
+             <span>{props.path}</span>
+        <h3>{props.title}</h3>
         </div>
        
     </div>

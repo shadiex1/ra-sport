@@ -21,19 +21,58 @@
           { "alias": "shirt name" }
         ]
       },
-      {
-         " alias":"Training "
-      },
+      
       {
           "alias":"Swimming"
       }
     ]
   },
   {
-      "alias":"Women"
+      "alias":"Women",
+      "name":"Women",
+      "id":2,
+      "children": [
+        {
+          "alias": "shirts",
+          "name":"shirts",
+          "id":1,
+          "children": [
+            {
+              "alias": "all"
+            },
+            { "alias": "shirt name" },
+            { "alias": "shirt name" },
+            { "alias": "shirt name" }
+          ]
+        },
+       
+        {
+            "alias":"Swimming"
+        }
+      ]
   },
   {
-      "alias":"Kids"
+      "alias":"Kids",
+      "name":"Kids",
+      "children": [
+        {
+          "alias": "shirts",
+          "name":"shirts",
+          "id":1,
+          "children": [
+            {
+              "alias": "all"
+            },
+            { "alias": "shirt name" },
+            { "alias": "shirt name" },
+            { "alias": "shirt name" }
+          ]
+        },
+        
+        {
+            "alias":"Swimming"
+        }
+      ]
   },
   {
       "alias":"Site Locator"
