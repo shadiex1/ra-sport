@@ -1,13 +1,13 @@
 .cartSidebar{
     position: fixed;
   top: 10.7%;
-  right: 0;
+  right:2px;
   width: 23%;
   height: 100vh;
 //   transition: all 0.3s ease-out;
   z-index: 20;
   background-color: var(--white-color);
-  overflow: auto;
+  // overflow: auto;
   .item{
       width: 100%;
       height: 60%;
@@ -18,6 +18,7 @@
       justify-content: space-between;
       align-items: center;
       margin:1rem 2rem;
+      width: 90%;
       span{
           align-self: flex-start;
       }

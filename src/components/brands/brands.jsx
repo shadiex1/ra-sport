@@ -59,7 +59,7 @@ class Brands extends Component{
                 <button>Shop now</button>
             </div>
             <div className={styles.showcaseImg}>
-            {/* <img  src={showcaseImg} alt="brand overview"/> */}
+            <img  src={showcaseImg} alt="brand overview"/>
             </div>
         </div>
         <div className={styles.slider}>
