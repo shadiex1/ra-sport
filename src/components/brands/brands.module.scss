@@ -25,8 +25,8 @@
             // max-width: 30%;
             height: 100%;
             img{
-                max-width: 100%;
-                height: auto;
+                width: 100%;
+                height: 100%;
             }
         }
         .descrption{
@@ -105,24 +105,42 @@
     background-color: transparent !important;
 }
 
+
+@media screen and (max-width:1100px){
+    .brandsContainer{
+        .board{
+            .showcaseImg{
+                width: 80%;
+            }
+            .descrption{
+                width: 30%;
+                // display: none;
+            }
+        }
+    }
+}
 @media screen and (max-width:800px){
     .brandsContainer{
         .board{
             flex-direction: column;
             .showcaseImg{
                 order: 1;
+                height: 50%;
+                // width: 100%;
                 img{
-
+                    width: 100%;
                 }
             }
             .descrption{
                 order: 2;
-                width: 100%;
-                height: 20%;
+                width: 80%;                    
+                     height: 20%;
+
                 img{
                     display: none;
                 }
-                button{
+                button{           
+
                 }
             }
         }
