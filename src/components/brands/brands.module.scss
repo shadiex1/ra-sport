@@ -126,6 +126,9 @@
 }
 @media screen and (max-width:800px){
     .brandsContainer{
+        .brands{
+            padding: 0;
+        }
         .board{
             flex-direction: column;
             .showcaseImg{

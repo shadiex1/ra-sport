@@ -58,7 +58,7 @@ class MenuWhite extends Component {
               </div>
               <NavLink to={process.env.PUBLIC_URL+"/"}> <img src={logo} alt="logo" /></NavLink>
             </div>
-            <div className={styles.links}>
+            {/* <div className={styles.links}>
               <ul>
                 <NavLink  activeClassName={styles.navLink} to={process.env.PUBLIC_URL + '/shop'}>SHOP</NavLink>
 
@@ -67,7 +67,7 @@ class MenuWhite extends Component {
                 <li>KIDS</li>
                 <li>SITE LOCATOR</li>
               </ul>
-            </div>
+            </div> */}
             <div className={styles.icons}>
               <div className={styles.icon} onClick={this.ToggleSearchbar}>
               <SearchIcon />

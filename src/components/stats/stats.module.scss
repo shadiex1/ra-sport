@@ -125,23 +125,25 @@
 @media screen and (max-width:700px){
     .statsContainer{
         .stats{
-
+            width: 80%;
             flex-direction: column;
             .brandsNumber{
                 width: 100%;
-                align-items: flex-start;
                 margin-bottom: 3rem;
             }
             .description{
-                width: 90%;
+                width: 100%;
                 .statBoxes{
                     flex-wrap: wrap;
+                    justify-content: center;
                     .box{
-                        width: 30%;
+                        width: 40%;
+                        margin: 1rem;
                     }
                     .locationBox{
                         margin-top: 2rem;
-                        width: 75%;
+                        width: 100%;
+                        height: 120px;
                     }
                 }
             }        

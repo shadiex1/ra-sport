@@ -42,21 +42,21 @@ class Menu extends Component {
     render(){
         return (
           <div className={styles.menu}>
-            <MenuSidebar  categories={categories} open={this.state.showMenuSidebar}
-          closed={this.showMenuSidebarClosedHandler}/>
+            {/* <MenuSidebar  categories={categories} open={this.state.showMenuSidebar}
+          closed={this.showMenuSidebarClosedHandler}/> */}
            <CartSidebar deleteFromCart={(i)=>this.props.deleteFromCart(i)} cart={this.props.cart} open={this.state.showCart} closed={this.showCartClosedHandler}/> 
            
           <div className={styles.navbar}>
             <div className={styles.logo}>
-              <div  
+              {/* <div  
                onClick={this.showMenuSidebarToggleHandler}
               className={styles.toggle}>
               <ListIcon />
 
-              </div>
+              </div> */}
               <NavLink to={process.env.PUBLIC_URL+"/"}> <img src={logo} alt="logo" /></NavLink>
             </div>
-            <div className={styles.links}>
+            {/* <div className={styles.links}>
               <ul>
                 <NavLink ClassName={styles.navLink} to={process.env.PUBLIC_URL + '/shop'}>SHOP</NavLink>
                 <li>MEN</li>
@@ -64,7 +64,7 @@ class Menu extends Component {
                 <li>KIDS</li>
                 <li>SITE LOCATOR</li>
               </ul>
-            </div>
+            </div> */}
             <div className={styles.icons}>
               <div className={styles.icon} onClick={this.ToggleSearchbar}>
               <SearchIcon />
