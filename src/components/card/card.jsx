@@ -8,7 +8,7 @@ import {withRouter} from 'react-router-dom';
 const card = (props) => {
 
   const viewMoreInfo=(item)=>{
-    props.history.push('/singleProduct', {
+    props.history.push(process.env.PUBLIC_URL+'/singleProduct', {
       product:item
     })
   }

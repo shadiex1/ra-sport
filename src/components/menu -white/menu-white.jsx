@@ -50,12 +50,12 @@ class MenuWhite extends Component {
            
           <div className={styles.navbar}>
             <div className={styles.logo}>
-              <div  
+              {/* <div  
                onClick={this.showMenuSidebarToggleHandler}
               className={styles.toggle}>
               <ListIcon />
 
-              </div>
+              </div> */}
               <NavLink to={process.env.PUBLIC_URL+"/"}> <img src={logo} alt="logo" /></NavLink>
             </div>
             {/* <div className={styles.links}>
