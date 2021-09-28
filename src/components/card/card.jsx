@@ -3,16 +3,24 @@ import styles from "./card.module.scss";
 import { ReactComponent as ShoppingIcon } from "../../assets/icons/bag.svg";
 import { ReactComponent as WishlistIcon } from "../../assets/icons/heart.svg";
 import { NavLink} from "react-router-dom"
+import {withRouter} from 'react-router-dom';
 
-const card = (props) => (
+const card = (props) => {
+
+  const viewMoreInfo=(item)=>{
+    props.history.push('/singleProduct', {
+      product:item
+    })
+  }
+return(
 
   <div className={styles.card}> 
-   <NavLink to={process.env.PUBLIC_URL+"/singleProduct"}> 
+   {/* <NavLink to={process.env.PUBLIC_URL+"/singleProduct"}>  */}
 
     <div className={styles.imgContainer}>
-      <img src={props.img} alt="product" />
+      <img onClick={()=>viewMoreInfo(props.product)} src={props.img} alt="product" />
       <div className={styles.description}>
-        <div>
+        <div onClick={props.addToCart}>
           <ShoppingIcon /> Add To Cart
         </div>
         <WishlistIcon />
@@ -29,9 +37,9 @@ const card = (props) => (
         <span className={styles.oldPrice}>{props.oldPrice} EGP</span>
       ) : null}
     </div>  
-    </NavLink>
+    {/* </NavLink> */}
 
   </div>
-);
+)};
 
-export default card;
+export default withRouter(card) ;

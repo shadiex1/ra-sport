@@ -1,6 +1,16 @@
 import React, { Component } from "react";
 import styles from "./brands.module.scss";
+import BrandCard from "./brandCard/brandCard"
 import showcaseImg from "../../assets/brands/Image5.png"
+import DcShowcaseImg from "../../assets/brands/Dcshoes.png"
+import GeoxCover from "../../assets/brands/GeoxCover.png"
+import GosportCover from "../../assets/brands/GosportCover.png"
+import levisCover from "../../assets/brands/levisCover.png"
+import quicksilverCover from "../../assets/brands/quicksilverCover.png"
+import reebokCover from "../../assets/brands/reebokCover.png"
+import rockportCovrer from "../../assets/brands/rockportCovrer.png"
+import RoxyCover from "../../assets/brands/RoxyCover.png"
+import timberlandCover from "../../assets/brands/timberlandCover.png"
 import Carousel from "nuka-carousel";
 
 import adidasLogo from "../../assets/brands/Adidas.png";
@@ -17,6 +27,23 @@ import timberlandLogo from "../../assets/brands/timberland.png";
 class Brands extends Component{
     state = {
         width: 1100,
+        imgs:[
+          {logo:adidasLogo,cover:showcaseImg,clicked:false,name:"addidas"},
+          {logo:dcsportsLogo,cover:DcShowcaseImg,clicked:false},
+          {logo:geoxLogo,cover:GeoxCover,clicked:false},
+          {logo:gosportLogo,cover:GosportCover,clicked:false},
+          {logo:lvisLogo,cover:levisCover,clicked:false},
+          {logo:quicksilverLogo,cover:quicksilverCover,clicked:false},
+          {logo:reebokLogo,cover:reebokCover,clicked:false},
+          {logo:rockportLogo,cover:rockportCovrer,clicked:false},
+          {logo:roxyLogo,cover:RoxyCover,clicked:false},
+          {logo:timberlandLogo,cover:timberlandCover,clicked:false}
+          
+        ],
+        
+          showcaseLogo:adidasLogo,
+          showcaseCover:showcaseImg
+        
       };
       updateDimensions() {
         if (window.innerWidth < 500) {
@@ -33,6 +60,15 @@ class Brands extends Component{
     
       componentWillUnmount() {
         window.removeEventListener("resize", this.updateDimensions.bind(this));
+      }
+
+      clicked=(img,cover)=>{
+        // console.log(name)
+        this.setState({
+          showcaseLogo:img,
+          showcaseCover:cover
+          
+        })
       }
     render(){
         let slides = 0;
@@ -55,11 +91,11 @@ class Brands extends Component{
         <p>LET'S SHOP BY <span>BRANDS</span></p>
         <div className={styles.board}>
             <div className={styles.descrption}>
-                <img src={adidasLogo} alt="brand"/>
+                <img src={this.state.showcaseLogo} alt="brand"/>
                 <button>Shop now</button>
             </div>
             <div className={styles.showcaseImg}>
-            <img  src={showcaseImg} alt="brand overview"/>
+            <img  src={this.state.showcaseCover} alt="brand overview"/>
             </div>
         </div>
         <div className={styles.slider}>
@@ -74,15 +110,8 @@ class Brands extends Component{
                 pagingDotsClassName: `${styles.pagingDots}`,
               }}
             slidesToShow={slides}>
-            <img src={dcsportsLogo} alt="brand"/>
-            <img src={geoxLogo} alt="brand"/>
-            <img src={gosportLogo} alt="brand"/>
-            <img src={lvisLogo} alt="brand"/>
-            <img src={quicksilverLogo} alt="brand"/>
-            <img src={reebokLogo} alt="brand"/>
-            <img src={rockportLogo} alt="brand"/>
-            <img src={roxyLogo} alt="brand"/>
-            <img src={timberlandLogo} alt="brand"/>
+           
+            {this.state.imgs.map(brand=><BrandCard clicked={()=>this.clicked(brand.logo,brand.cover)} logo={brand.logo}/>)}
         </Carousel>
         </div>
         

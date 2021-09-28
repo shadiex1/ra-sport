@@ -10,7 +10,7 @@ class SignIn extends Component {
     render(){
         return(
             <div className={styles.signin}>
-                <MenuWhite/>
+                <MenuWhite  deleteFromCart={(i)=>this.props.deleteFromCart(i)} cart={this.props.cart}/>
                 <Banner path={"Home / my account"} title={"my account"} />
                 <SignInForm/>
                 <Footer/>

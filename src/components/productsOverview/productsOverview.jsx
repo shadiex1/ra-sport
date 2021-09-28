@@ -4,6 +4,7 @@ import Carousel from 'nuka-carousel';
 import products from "../../services/products";
 import Card from "../card/card";
 import { NavLink} from "react-router-dom"
+import productInfo from "../product info/productInfo";
 
 
 
@@ -29,19 +30,20 @@ class ProductsOverview extends Component {
   }
   
   render() {
-    let slides = 0;
+    let slides = this.props.slides;
     let enabled=false
 
 if (this.state.width > 1200) {
-  slides = 5;
+  // slides = 4;
 } else if (this.state.width >900) {
-   slides = 4;
+   slides = 3;
     // enabled=true
 } else if (this.state.width > 500) {
   slides = 2;
    enabled=true
 }else {slides = 1;  enabled=true}
 ;
+
     return (
       <div className={styles.productsOverview}>
         <p>
@@ -64,6 +66,8 @@ if (this.state.width > 1200) {
 
 
                 <Card 
+                addToCart={()=>this.props.addToCart(product)}
+                product={product}
                 img={product.img} 
                 key={product.id} 
                 brand={product.brand} 

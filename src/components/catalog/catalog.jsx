@@ -14,7 +14,10 @@ class Catalog extends Component{
              <div className={styles.catalog}>
                  <div className={styles.catalogGrid}>
                  {this.state.products.map(product=>(
-                     <Card img={product.img} 
+                     <Card 
+                     addToCart={()=>this.props.addToCart(product)}
+                     product={product}
+                     img={product.img} 
                      key={product.id} 
                      brand={product.brand} 
                      brandLogo={product.brandLogo} 

@@ -11,11 +11,11 @@ class ShopPage extends Component {
     render(){
         return(
             <div className={styles.ShopPage}>
-                <MenuWhite/>
+                <MenuWhite  deleteFromCart={(i)=>this.props.deleteFromCart(i)} cart={this.props.cart}/>
                <Banner path={"Home / Shop"} title={"shop"}/>
                <div className={styles.catalog}>
                    <ShopSidebar/>
-               <Catalog/>
+               <Catalog addToCart={(item)=>this.props.addToCart(item)}/>
                </div>
                <Footer/>
                

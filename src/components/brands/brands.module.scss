@@ -22,7 +22,7 @@
         height: 25rem;
         margin: 3rem auto;
         .showcaseImg{
-            // max-width: 30%;
+            width: 80%;
             height: 100%;
             img{
                 width: 100%;
@@ -67,7 +67,10 @@
                     padding-bottom: 1rem;
                     opacity: .5;
                     &:hover{
-                        opacity: 1;
+                        // opacity: 1;
+                        // border-bottom: 3px solid var(--primary-color);
+
+
                     }
                     }
                     li{
@@ -75,8 +78,10 @@
                         cursor: default;
                     }
                     li:hover{
-                    border-bottom: 2px solid var(--primary-color);
-
+                    border-bottom: 3px solid var(--primary-color);
+                    img{
+                        opacity: 1;
+                    }
                     }
 
         }

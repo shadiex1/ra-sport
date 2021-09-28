@@ -2,7 +2,8 @@
     width: 95%;
     height: 10rem;
     margin: 1rem .5rem;
-    border-bottom: 1px solid  rgba(0, 0, 0, 0.16);;
+    border-bottom: 1px solid  rgba(0, 0, 0, 0.16);
+    padding-bottom: 1rem;
     position: relative;
     &:hover{
         box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.16);
@@ -62,19 +63,19 @@
     }
     .additionalInfo{
         display: flex;
-        justify-content: space-between;
+        // justify-content: ;
         align-items: center;
         margin-top: .5rem;
-        width: 90%;
-        div{
+        width: 100%;
+        
             display: flex;
             align-items: center;
+            
             .price{
                 color: var(--primary-color);
                 font-weight: 500;
-                margin-left: 1rem;
             }
-        }
+        
 
         img{
             width: 4rem;
@@ -85,7 +86,7 @@
         .controls{
             border: 1px solid rgba(0, 0, 0, 0.16);
             border-radius: 10px;
-
+            margin-right: .5rem;
              width: 6rem;
             height: 1rem;
             padding: .5rem;

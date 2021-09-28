@@ -40,9 +40,10 @@
             }
             .formGroup{
                 margin: 1.5rem 0;
+                display: flex;
                 label{
                     color: #707070 ;
-                    margin-right: 2rem;
+                    width: 5rem;
                 }
                 select{
                     width: 20rem;

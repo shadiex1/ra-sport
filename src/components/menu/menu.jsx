@@ -42,9 +42,9 @@ class Menu extends Component {
     render(){
         return (
           <div className={styles.menu}>
-            <MenuSidebar categories={categories} open={this.state.showMenuSidebar}
+            <MenuSidebar  categories={categories} open={this.state.showMenuSidebar}
           closed={this.showMenuSidebarClosedHandler}/>
-          {this.state.showCart ? <CartSidebar open={this.state.showCart} closed={this.showCartClosedHandler}/> : null}
+           <CartSidebar deleteFromCart={(i)=>this.props.deleteFromCart(i)} cart={this.props.cart} open={this.state.showCart} closed={this.showCartClosedHandler}/> 
            
           <div className={styles.navbar}>
             <div className={styles.logo}>
@@ -73,6 +73,7 @@ class Menu extends Component {
               <UsersIcon />
               </Link>
               <div className={styles.icon} onClick={this.ToggleCart}>
+                <div className={styles.counter}>{this.props.cart.length}</div>
               <BagIcon />
               </div>
             </div>

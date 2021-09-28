@@ -15,13 +15,13 @@ class Homepage extends Component{
     render(){
         return(
             <div className={styles.homepage}>
-                    <Menu/>
+                    <Menu deleteFromCart={(i)=>this.props.deleteFromCart(i)} cart={this.props.cart}/>
                     <Showcase/>
                     <Categories/>
                     <Brands/>
-                    <ProductsOverview title="BEST" subTitle="SELLER"/>
+                    <ProductsOverview addToCart={(item)=>this.props.addToCart(item)} slides={5} title="BEST" subTitle="SELLER"/>
                     <Tours/>
-                    <ProductsOverview title="New" subTitle="ARRIVAL"/>
+                    <ProductsOverview  addToCart={(item)=>this.props.addToCart(item)} slides={5} title="New" subTitle="ARRIVAL"/>
                     <Stats/>
                     <Footer/>
             </div>
