@@ -8,8 +8,7 @@ import {withRouter} from 'react-router-dom';
 
 
 class SingleProduct extends Component{
-    componentDidMount() {
-      }
+
     render(){
         window.scrollTo(0, 0)
 

@@ -55,7 +55,7 @@ const cart = [...this.state.cart]
         <Route exact path={process.env.PUBLIC_URL + '/'} component={() => <Homepage deleteFromCart={(id)=>this.deleteFromCart(id)} cart={this.state.cart} addToCart={(item) => this.addToCart(item)} />} />
         <Route path={process.env.PUBLIC_URL + '/shop'} component={() => <ShopPage deleteFromCart={(index)=>this.deleteFromCart(index)} cart={this.state.cart} addToCart={(item) => this.addToCart(item)} />} />
         <Route path={process.env.PUBLIC_URL + "/signin"} component={() => <SignIn deleteFromCart={(index)=>this.deleteFromCart(index)}  cart={this.state.cart} />} />
-        <Route path={process.env.PUBLIC_URL + "/singleProduct"} component={() => <SingleProduct deleteFromCart={(index)=>this.deleteFromCart(index)} cart={this.state.cart} productInfo={(item) => this.viewProductInfo(item)} addToCart={(item, quantity) => this.addToCart(item, quantity)} product={this.state.selectedProduct} />} />
+        <Route path={process.env.PUBLIC_URL + "/singleProduct/:id"} component={() => <SingleProduct deleteFromCart={(index)=>this.deleteFromCart(index)} cart={this.state.cart} productInfo={(item) => this.viewProductInfo(item)} addToCart={(item, quantity) => this.addToCart(item, quantity)} product={this.state.selectedProduct} />} />
       </React.Fragment>
     )
   }
