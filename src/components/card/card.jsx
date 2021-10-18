@@ -19,7 +19,6 @@ return(
    {/* <NavLink to={process.env.PUBLIC_URL+"/singleProduct"}>  */}
 
     <div className={styles.imgContainer}>
-
       <img onClick={()=>viewMoreInfo(props.product)} src={props.img} alt="product" />
       <div className={styles.description}>
         <div onClick={props.addToCart}>
