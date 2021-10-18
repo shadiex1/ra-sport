@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "6fd2120bbc3c964df062be376bbd3c6f",
+    "revision": "d77e3a93ba9bd314d1d27a6487c0f3b0",
     "url": "/ra-sport/index.html"
   },
   {
-    "revision": "81ef5b90643688c8a857",
+    "revision": "3171b5a98c5b1c89e3fd",
     "url": "/ra-sport/static/css/main.d19bb081.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/ra-sport/static/js/2.bb55d12c.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "81ef5b90643688c8a857",
-    "url": "/ra-sport/static/js/main.4ec4751f.chunk.js"
+    "revision": "3171b5a98c5b1c89e3fd",
+    "url": "/ra-sport/static/js/main.c466c749.chunk.js"
   },
   {
     "revision": "c65ad9eec8f2d294a7a8",
