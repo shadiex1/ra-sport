@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "61ac5f8485cf2e512c8d8d3f68ecd333",
+    "revision": "6fd2120bbc3c964df062be376bbd3c6f",
     "url": "/ra-sport/index.html"
   },
   {
-    "revision": "f2bd52326d93d6b31b08",
-    "url": "/ra-sport/static/css/main.2ce2b684.chunk.css"
+    "revision": "81ef5b90643688c8a857",
+    "url": "/ra-sport/static/css/main.d19bb081.chunk.css"
   },
   {
-    "revision": "ee530b946f58bda5a813",
-    "url": "/ra-sport/static/js/2.bc2fc1d6.chunk.js"
+    "revision": "01a02b48d447261ab3bc",
+    "url": "/ra-sport/static/js/2.bb55d12c.chunk.js"
   },
   {
     "revision": "859ae2434a61dfdffa9f7208c890bf34",
-    "url": "/ra-sport/static/js/2.bc2fc1d6.chunk.js.LICENSE.txt"
+    "url": "/ra-sport/static/js/2.bb55d12c.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "f2bd52326d93d6b31b08",
-    "url": "/ra-sport/static/js/main.76e2cfd5.chunk.js"
+    "revision": "81ef5b90643688c8a857",
+    "url": "/ra-sport/static/js/main.4ec4751f.chunk.js"
   },
   {
     "revision": "c65ad9eec8f2d294a7a8",
