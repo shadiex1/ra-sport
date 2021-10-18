@@ -9,9 +9,9 @@ import {withRouter} from 'react-router-dom';
 
 class SingleProduct extends Component{
     componentDidMount() {
-        window.scrollTo(0, 0)
       }
     render(){
+        window.scrollTo(0, 0)
 
         return(
             <div className={styles.productPage}>
