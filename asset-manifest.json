@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/ra-sport/static/css/main.d19bb081.chunk.css",
-    "main.js": "/ra-sport/static/js/main.c466c749.chunk.js",
-    "main.js.map": "/ra-sport/static/js/main.c466c749.chunk.js.map",
+    "main.js": "/ra-sport/static/js/main.ba8dfa27.chunk.js",
+    "main.js.map": "/ra-sport/static/js/main.ba8dfa27.chunk.js.map",
     "runtime-main.js": "/ra-sport/static/js/runtime-main.2f7985c4.js",
     "runtime-main.js.map": "/ra-sport/static/js/runtime-main.2f7985c4.js.map",
     "static/js/2.bb55d12c.chunk.js": "/ra-sport/static/js/2.bb55d12c.chunk.js",
     "static/js/2.bb55d12c.chunk.js.map": "/ra-sport/static/js/2.bb55d12c.chunk.js.map",
     "index.html": "/ra-sport/index.html",
-    "precache-manifest.6399ccbc565cd1c1e91a89ab1173b8f6.js": "/ra-sport/precache-manifest.6399ccbc565cd1c1e91a89ab1173b8f6.js",
+    "precache-manifest.77dc0b523f34f9a43554128c48125394.js": "/ra-sport/precache-manifest.77dc0b523f34f9a43554128c48125394.js",
     "service-worker.js": "/ra-sport/service-worker.js",
     "static/css/main.d19bb081.chunk.css.map": "/ra-sport/static/css/main.d19bb081.chunk.css.map",
     "static/js/2.bb55d12c.chunk.js.LICENSE.txt": "/ra-sport/static/js/2.bb55d12c.chunk.js.LICENSE.txt",
@@ -64,6 +64,6 @@
     "static/js/runtime-main.2f7985c4.js",
     "static/js/2.bb55d12c.chunk.js",
     "static/css/main.d19bb081.chunk.css",
-    "static/js/main.c466c749.chunk.js"
+    "static/js/main.ba8dfa27.chunk.js"
   ]
 }

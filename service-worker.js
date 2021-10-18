@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/ra-sport/precache-manifest.6399ccbc565cd1c1e91a89ab1173b8f6.js"
+  "/ra-sport/precache-manifest.77dc0b523f34f9a43554128c48125394.js"
 );
 
 self.addEventListener('message', (event) => {
