@@ -1,0 +1,132 @@
+.menu{   
+     background:  url("../../assets/menuBackground.png") no-repeat ;
+     background-position: 10% 90%;
+     background-size: cover;
+    // background: linear-gradient(90deg, rgba(11,126,120,1) 0%, rgba(20,154,149,1) 100%);
+
+    z-index: 3;
+        position: fixed;       
+     overflow: hidden;
+     border: transparent;
+     outline: transparent;
+    width: 100vw;
+    top: 0;
+    left: 0;
+     .toggle{
+         display: inline-block;
+     }
+    .navbar{
+    display: flex;
+    width: 70%;
+    margin: auto;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 1rem;
+    padding: 1rem 0 ;
+    z-index: 30 !important;
+    .logo{
+        svg{
+            cursor: pointer;
+             path{
+                 fill: var(--white-color);
+            }
+            margin-right: 1.2rem;
+            width: 1.5rem;
+        
+        }
+        
+        img{
+            object-fit: contain;
+            width: 10rem;
+        }
+        a{
+            text-decoration: none;
+        }
+    }
+    .links{
+        margin-left: 10rem;
+        ul{
+            a{
+                margin-right: 2rem;
+                color: var(--white-color);
+                text-decoration: none;
+                }
+            li{
+                
+                display: inline-block;
+                margin-right: 2rem;
+                list-style-type: none;
+                color: var(--white-color);
+                cursor: pointer;
+            }
+        }
+    }
+    .icons{
+        cursor: pointer;
+        .icon{
+            display: inline-block;
+            // width: 100%;
+            height: 3rem;
+            position: relative;
+            text-align: center;
+            .counter{
+                position: absolute;
+                top: 19px;
+                left: 14px;
+                background-color: white;
+                width: 1.2rem;
+                height: 1.2rem;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-weight: bold;
+                color: var(--primary-color);
+                font-size: .9rem;
+                
+            }
+        }
+        svg{
+            margin-right: 1.2rem;
+            width: 1.5rem;
+            
+            path{
+                fill: var(--white-color);
+           }
+        //    &:hover{
+        //        path{fill: var(--primary-color);}
+        //    }
+        }
+    }
+}
+}
+
+@media screen and (max-width:1300px){
+    .menu{
+        .navbar{
+            width: 95%;
+            .links{
+                margin: 0;
+            }
+        }
+    }
+}
+@media screen and (max-width:800px){
+    .menu{
+        .navbar{
+            width: 95%;
+            .links{
+                display: none;
+            }
+        }
+    }
+}
+@media screen and (max-width:500px){
+    .menu{
+        .navbar{
+            .usericon{
+                display: none;
+            }
+        }
+    }
+}

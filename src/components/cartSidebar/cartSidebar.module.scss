@@ -1,0 +1,89 @@
+.cartSidebar{
+    position: fixed;
+  top: 11.7%;
+  right:0px;
+  width: 23%;
+  height: 70vh;
+  transition: all 0.3s ease-out;
+  z-index: 20;
+  background-color: var(--white-color);
+  // overflow: auto;
+  .item{
+      width: 100%;
+      height: 80%;
+      overflow: auto;
+  }
+  .priceContainer{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin:1rem 2rem;
+      span{
+          align-self: flex-start;
+      }
+      div{
+          display: flex;
+          align-items: flex-end;
+          flex-direction: column;
+            .price{
+                align-self: flex-end;
+                color: var(--primary-color);
+                font-weight: bold;
+            }
+            p{
+                font-size: .8rem;
+                color: var(--grey-color);
+            }
+      }
+  }
+  button{
+      width: 90%;
+      height: 2.5rem;
+      border-radius: 5px;
+      border: none;
+      color: var(--white-color);
+      margin: auto;
+      display: block;
+      cursor: pointer;
+  }
+  .cartBtn{
+            background-color: var(--primary-color);
+
+  }
+  .checkoutBtn{
+      background-color: var(--white-color);
+      color: var(--primary-color);
+      border: 1px solid var(--primary-color);
+      margin-top: 1rem;
+  }
+}
+
+.Open {
+  transform: translateX(0);
+}
+.Close {
+  transform: translateX(100%);
+}
+
+@media screen and (max-width: 1200px) {
+    .cartSidebar {
+      width: 30%;
+    }
+  }
+  @media screen and (max-width: 900px) {
+    .cartSidebar {
+      width: 45%;
+    }
+  }
+  @media screen and (max-width: 700px) {
+    .cartSidebar {
+      top: 9.5%;
+      width: 92%;
+    }
+  }
+  // @media screen and (max-width: 450px) {
+  //   .cartSidebar {
+  //     width: 100%;
+  //   }
+  // }
+  

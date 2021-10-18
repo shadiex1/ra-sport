@@ -1,0 +1,134 @@
+// @import "../../../../VariablesScss/1/variables";
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 20%;
+  height: 100%;
+  transition: all 0.3s ease-out;
+  z-index: 20;
+  background-color: var(--white-color);
+  overflow: auto;
+
+  .title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid var(--white-color);
+    border:1px solid rgba(0, 0, 0, 0.16);
+    padding: 1rem;
+    img {
+      width: 50%;
+    }
+    .close {
+      width: 0.7rem;
+      cursor: pointer;
+    }
+    svg {
+      width: 1rem;
+      cursor: pointer;
+      &:hover {
+        g {
+          path {
+            fill: var(--primary-color);
+          }
+        }
+      }
+    }
+  }
+  .mobile {
+    .mobileHeader {
+      display: none;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 1rem;
+      height: 3rem;
+      background-color: var(--primary-color);
+      p {
+        color: var(--white-color);
+        font-size: 1.2rem;
+        margin-top: 1rem;
+      }
+      svg {
+        width: 1rem;
+        cursor: pointer;
+        color: var(--white-color);
+        g {
+          path {
+            fill: var(--white-color);
+          }
+        }
+      }
+    }
+    .menu {
+      display: none;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 1rem;
+      border-bottom: 1px solid var(--light-secondary-color);
+      img {
+        width: 50%;
+        height: 50%;
+        margin-top: 0.5rem;
+      }
+      .icons {
+        display: flex;
+        svg {
+          margin: 0.5rem;
+          width: 1.5rem;
+        }
+      }
+    }
+    .user {
+      display: none;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0.5rem 1rem;
+      border-bottom: 1px solid var(--light-secondary-color);
+
+      svg {
+        width: 0.7rem;
+        margin-right: 1rem;
+      }
+      .userContainer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        p {
+          margin: auto 0;
+          font-weight: 500;
+          color: #6b6b6b;
+        }
+        svg {
+          width: 1.5rem;
+          margin-right: 1rem;
+        }
+      }
+    }
+  }
+}
+
+.Open {
+  transform: translateX(0);
+}
+.Close {
+  transform: translateX(-100%);
+}
+
+@media screen and (max-width: 1000px) {
+  .sidebar {
+    width: 30%;
+  }
+}
+@media screen and (max-width: 800px) {
+  .sidebar {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 500px) {
+  .sidebar {
+    width: 100%;
+    
+  }
+}

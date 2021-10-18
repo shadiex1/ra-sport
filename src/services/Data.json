@@ -1,0 +1,86 @@
+
+{
+  "categories":[{
+    "alias": "shop"
+  },
+  {
+    "alias": "men",
+    "name":"men",
+    "id":1,
+    "children": [
+      {
+        "alias": "shirts",
+        "name":"shirts",
+        "id":1,
+        "children": [
+          {
+            "alias": "all"
+          },
+          { "alias": "shirt name" },
+          { "alias": "shirt name" },
+          { "alias": "shirt name" }
+        ]
+      },
+      
+      {
+          "alias":"Swimming"
+      }
+    ]
+  },
+  {
+      "alias":"Women",
+      "name":"Women",
+      "id":2,
+      "children": [
+        {
+          "alias": "shirts",
+          "name":"shirts",
+          "id":1,
+          "children": [
+            {
+              "alias": "all"
+            },
+            { "alias": "shirt name" },
+            { "alias": "shirt name" },
+            { "alias": "shirt name" }
+          ]
+        },
+       
+        {
+            "alias":"Swimming"
+        }
+      ]
+  },
+  {
+      "alias":"Kids",
+      "name":"Kids",
+      "children": [
+        {
+          "alias": "shirts",
+          "name":"shirts",
+          "id":1,
+          "children": [
+            {
+              "alias": "all"
+            },
+            { "alias": "shirt name" },
+            { "alias": "shirt name" },
+            { "alias": "shirt name" }
+          ]
+        },
+        
+        {
+            "alias":"Swimming"
+        }
+      ]
+  },
+  {
+      "alias":"Site Locator"
+  },
+  {
+      "alias":"Career"
+  },
+  {
+      "alias":"Contact us"
+  }]
+}

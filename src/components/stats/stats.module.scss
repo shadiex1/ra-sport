@@ -1,0 +1,155 @@
+.statsContainer{
+    background-image: url("../../assets/MaskGroup38.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    // height: 100vh;
+    display: flex;
+    align-items: center;
+    position: relative;
+    .pattern{
+        position: absolute;
+        // display: block;
+        width: 12rem;
+        top: 50%;
+        right: 70%;
+    }
+.stats{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    margin: auto;
+    padding: 5rem;
+    .brandsNumber{
+        width: 40%;
+        display: flex;
+        align-items: center;
+        align-self: flex-start;
+        justify-content: center;
+        flex-direction: column;
+        margin-right: 2rem;
+        span:first-of-type{
+            font-size: 8rem;
+            color: #1a4e64 ;
+            font-weight: bold;
+            margin-left: 1.3rem;
+            font-family: BloomingElegantSans;
+            sup{
+                font-weight: 900;
+                font-size: 3rem;
+                display: inline-block;
+                transform: translateX(-2rem);
+
+            }
+        }
+        span:last-of-type{
+            color: var(black-color);
+            font-size: 2rem;
+            font-weight: bold;
+            margin-right: 1rem;
+            text-align: center;
+        }
+    }
+    .description{
+        width: 60%;
+
+        span{
+            font-size: 2rem;
+
+        }
+        h3{
+            font-size: 2.2rem;
+            // width: 80%;
+            margin: 0;
+        }
+        p{
+            color: #808080   ;
+        }
+
+        .statBoxes{
+           display: flex;
+           width: 100%;
+           flex-direction: row;
+           margin-top: 4rem;
+            .box{
+                width: 15%;
+                height: 6rem;
+                text-align: center;
+                border: 1px solid #d3d3d3;
+                margin-right: 2rem;
+                border-radius: 5px;
+                span{
+                    color: #1a4e64;
+                    font-weight: bold;
+                    font-size: 3rem;
+                }
+                p{
+                    font-weight: bold;
+                    color: var(---black-color);
+                    margin: 0;
+                }
+            }
+            .locationBox{
+                width: 30%;
+                height: 6rem;
+                border-radius: 5px;
+                background-color: #22aea5 ;
+                text-align: center;
+                display: flex;
+                align-items: center;
+                justify-content: flex-end;
+                flex-direction: column;
+                position: relative;
+                img{
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    display: block;
+                    width: 100%;
+                    height: 80%;
+                    margin: 0;
+                }
+                p{
+                    color: var(--white-color);
+                    font-weight: bold;
+                }
+                
+            }
+        }
+    }
+}
+}
+
+@media screen and (max-width:700px){
+    .statsContainer{
+        .stats{
+            width: 80%;
+            flex-direction: column;
+            .brandsNumber{
+                width: 100%;
+                margin-bottom: 3rem;
+            }
+            .description{
+                width: 100%;
+                .statBoxes{
+                    flex-wrap: wrap;
+                    justify-content: center;
+                    .box{
+                        width: 40%;
+                        margin: 1rem;
+                    }
+                    .locationBox{
+                        margin-top: 2rem;
+                        width: 100%;
+                        height: 120px;
+                    }
+                }
+            }        
+        }
+        .pattern{
+            display: none;
+        }
+    }
+}

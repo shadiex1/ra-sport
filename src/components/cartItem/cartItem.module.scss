@@ -1,0 +1,106 @@
+.cartItem{
+    width: 95%;
+    height: 10rem;
+    margin: 1rem .5rem;
+    border-bottom: 1px solid  rgba(0, 0, 0, 0.16);
+    padding-bottom: 1rem;
+    position: relative;
+    &:hover{
+        box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.16);
+        .trashIcon{
+            display: flex;
+        }
+    }
+    .trashIcon{
+        position: absolute;
+        top: 0%;
+        right: 3%;
+        background-color: var(--primary-color);
+        width: 1.5rem;
+        height: 2rem;
+        display: none;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        svg{
+            width: .8rem;
+            path{
+                fill: var(--white-color);
+            }
+        }
+    }
+    .productInfo{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        img{
+            width: 6rem;
+            height: 6rem;
+            object-fit: contain;
+        }
+        .info{
+            width: 70%;
+            .title{
+                font-size: .9rem;
+                max-height: 2rem;
+                color: var(--grey-color);
+            }
+        }
+        .details{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin: 2rem 3rem 0 0;
+            width: 90%;
+            span{
+                color: var(--grey-color);
+                
+                span{
+                    color: var(--black-color);
+                }
+            }
+        }
+    }
+    .additionalInfo{
+        display: flex;
+        // justify-content: ;
+        align-items: center;
+        margin-top: .5rem;
+        width: 100%;
+        
+            display: flex;
+            align-items: center;
+            
+            .price{
+                color: var(--primary-color);
+                font-weight: 500;
+            }
+        
+
+        img{
+            width: 4rem;
+            height: 3rem;
+            object-fit: contain;
+            margin: 0 1rem;
+        }
+        .controls{
+            border: 1px solid rgba(0, 0, 0, 0.16);
+            border-radius: 10px;
+            margin-right: .5rem;
+             width: 6rem;
+            height: 1rem;
+            padding: .5rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 1.5rem;
+            color: var(--primary-color);
+            .quantity{
+                color: var(--black-color);
+                font-size: 1.1rem;
+                margin: 0;
+            }
+        }
+
+    }
+}

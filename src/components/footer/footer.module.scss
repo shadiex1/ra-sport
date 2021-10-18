@@ -1,0 +1,115 @@
+.footer{
+    background-color: #3c4140;
+    padding: 2rem;
+    .footerContent{
+        width: 70%;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        .icons{
+            img{
+                width: 9rem;
+            }
+            .iconContainer{
+                svg{
+                    display: inline-block;
+                    margin: 1rem;
+                    width: 1.1rem;
+                    height: 1.2rem;
+                }
+            }
+        }
+        .lists{
+            display: flex;
+           
+            .list{
+                ul{
+                    border-left: 1px solid #4b4c50 ;
+                    list-style-type: none;
+                    padding: 0;
+                    margin: 1.5rem;
+                    li{
+                        margin: 1rem;
+                        width: 80%;
+                        color: #c6c6c6 ;
+                        font-size: .8rem;
+                    }
+                }
+            }
+        }
+        .newsletter{
+            span{
+                color: #c6c6c6  ;
+                font-weight: bold;
+                text-align: center;
+            }
+            .subscribe{
+            background-color: #2d2d2e;
+            display: flex;
+            align-items: center;
+            padding: .5rem;
+            margin-top: 1rem;
+            border-radius: 5px;
+                input{
+                    width: 15rem;
+                    background-color: transparent;
+                    border: none;
+                    outline: none;
+                }
+                svg{
+                    display: inline-block;
+                    width: 1.5rem;
+                    height: 1.5rem;
+                    margin-right: .5rem;
+                    cursor: pointer;
+                }
+            }
+        }
+
+    }
+    .copyrights{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 60%;
+        margin: auto;
+        padding:1rem 3rem 0 3rem;
+        border-top: .5px solid #4b4c50        ;
+
+        div{
+            display: flex;
+            align-items: center;
+            img{
+                display: block;
+                width: 6rem;
+            }
+        }
+        span{
+            margin-right: .5rem;
+            color: var(--white-color);
+            font-size: 10px;
+        }
+    }
+}
+
+@media screen and (max-width:800px){
+    .footer{
+        .footerContent{
+            flex-direction: column;
+        }
+        .copyrights{
+            flex-direction: column;
+            div{
+                width: 100%;
+                span{
+                    margin: 0 .5rem;
+                }
+                
+            }
+            span{
+                margin-bottom: 1.2rem;
+            }
+        }
+    }
+}
